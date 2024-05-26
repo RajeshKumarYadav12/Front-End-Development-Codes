@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Encoding System</title>
+    <link rel="stylesheet" href="220101047.css">
+</head>
+<body>
+    <div class="form">
+        <div class="input1">
+            <label for="string">String:</label>
+            <input type="text" id="string" placeholder="Enter your string...">
+            <br><br>
+        </div>
+        <div class="input2">
+            <label for="algo">Algorithm:</label>
+            <select name="algo" id="algo">
+                <option value="base64">Base64</option>
+                <option value="base32">Base32</option>
+                <option value="base85">Base85 (ASCII85)</option>
+            </select>
+            <br><br>
+        </div>
+     
+        <button onclick="BaseConversion()">Compute Result</button>
+    </div>
+    <div class="result" id="result">
+        
+    </div>
+    <script src="220101047.js"></script>
+</body>
+</html>

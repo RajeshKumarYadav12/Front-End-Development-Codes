@@ -1,0 +1,58 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #007bff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="color"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #710309;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.format1, .format2, .format3, .format4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.format1 h2, .format2 h2, .format3 h2, .format4 h2 {
+    margin-bottom: 10px;
+}
+
+.format1 p, .format2 p, .format3 p, .format4 p {
+    margin: 5px 0;
+}

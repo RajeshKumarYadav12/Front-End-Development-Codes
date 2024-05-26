@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="220101047.css">
+    <title>Binary Calculator</title>
+</head>
+<body>
+
+<div id="calculator">
+    <label>
+        <input type="radio" name="displayMode" value="binary" checked> Display in Binary only
+    </label>
+    <label>
+        <input type="radio" name="displayMode" value="both"> Display in Binary and Decimal
+    </label>
+    <br><br>
+
+    <div class="input-container">
+        Binary Input 1: <input type="text" id="binaryInput1" maxlength="8">
+    </div>
+    <div class="input-container">
+        Binary Input 2: <input type="text" id="binaryInput2" maxlength="8">
+    </div>
+    <br><br>
+
+    <div id="operations">
+        <button onclick="performOperation('and')">Logical AND</button>
+        <button onclick="performOperation('or')">Logical OR</button>
+        <button onclick="performOperation('not')">Logical NOT</button>
+        <button onclick="performOperation('bitwiseAnd')">Bitwise AND</button>
+        <button onclick="performOperation('bitwiseOr')">Bitwise OR</button>
+        <button onclick="performOperation('bitwiseXor')">Bitwise XOR</button>
+        <button onclick="performOperation('bitwiseNot')">Bitwise NOT</button>
+        <button onclick="performOperation('rightShift')">Right Shift</button>
+        <button onclick="performOperation('leftShift')">Left Shift</button>
+        <button onclick="performOperation('unsignedRightShift')">Unsigned Right Shift</button>
+    </div>
+    <br><br>
+
+    <div id="results">
+        <div>
+            <strong>Result (Binary):</strong> <span id="resultBinary"></span>
+        </div>
+        <div>
+            <strong>Result (Decimal):</strong> <span id="resultDecimal"></span>
+        </div>
+    </div>
+    <br><br>
+
+    <div id="buttons">
+        <button onclick="resetCalculator()">Reset</button>
+        <button onclick="navigateOperation(-1)"><< Prev Operation</button>
+        <button onclick="navigateOperation(1)">Next Operation >></button>
+    </div>
+</div>
+
+<script src="220101047.js"></script>
+</body>
+</html>

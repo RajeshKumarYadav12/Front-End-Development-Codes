@@ -1,0 +1,128 @@
+body{
+	background-color:lightblue;
+}
+
+#information{
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+    background-color: rgb(27, 27, 232);
+}
+
+form input{
+	margin: 10px;
+	height:40px;
+	width: 300px;
+}
+
+#format1,#format2,#format3,#format4{
+	height:20px;
+	width:20px;
+}
+
+#Visiting-card1{
+	display:none;
+	margin:40px;
+	border: 2px solid black;
+	padding:10px;
+	border-radius: 20px;
+}
+
+#Visiting-card2{
+	display:none;
+	margin:40px;
+	border: 2px solid black;
+}
+
+#Visiting-card3{
+	display:none;
+	margin:40px;
+	border: 2px solid black;
+}
+
+#Visiting-card4{
+	display:none;
+	margin:40px;
+	border: 2px solid black;
+}
+
+.container{
+	margin-right: 40px;
+}
+
+.image img{
+	height:100px;
+}
+
+#Visiting-card1 .top,#Visiting-card2 .top{
+	display:flex;
+}
+
+#eemail1,#emobile1{
+	margin:10px;
+}
+
+#Visiting-card1 .image{
+	display:flex;
+}
+
+#Visiting-card1 .image img{
+	margin:auto;
+}
+
+#ename1{
+	margin-top:10px;
+	font-weight: 600;
+}
+
+.desc{
+	display:flex;
+}
+
+#Visiting-card2 .image{
+	display: block;
+}
+
+#Visiting-card2 #ename2{
+	margin-left:160px;
+}
+
+#Visiting-card2 .desc{
+	margin-left:130px;
+	margin-bottom: 20px;
+}
+
+#Visiting-card2 .top{
+	border-top: 2px solid black;
+}
+
+#ename2{
+	font-weight: 600;
+}
+
+#eemail2,#emobile2{
+	margin:10px;
+}
+
+#emobile2{
+	margin-left:150px;
+}
+
+#Visiting-card3 img{
+	margin-top:30px;
+}
+
+#ename3{
+	margin-top:30px;
+	font-weight: 600;
+}
+
+#Visiting-card3 .container{
+	margin-left:20px;
+	border-left: 2px solid black;
+	padding-left:20px;
+}
+
+#Visiting-card4 {
+	display: block;
+}

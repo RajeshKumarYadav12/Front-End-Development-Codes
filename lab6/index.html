@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Visiting Card Generator</h1>
+        <form id="visitingCardForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="designation">Designation:</label><br>
+            <input type="text" id="designation" name="designation" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Mobile Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="orgName">Organisation Name:</label><br>
+            <input type="text" id="orgName" name="orgName" required><br><br>
+
+            <label for="orgLogo">Organisation Logo:</label><br>
+            <input type="file" id="orgLogo" name="orgLogo" accept="image/*"><br><br>
+
+            <label for="primaryColor">Primary Color:</label><br>
+            <input type="color" id="primaryColor" name="primaryColor" value="#ffffff"><br><br>
+
+            <label for="secondaryColor">Secondary Color:</label><br>
+            <input type="color" id="secondaryColor" name="secondaryColor" value="#000000"><br><br>
+
+            <label for="textColor">Text Color:</label><br>
+            <input type="color" id="textColor" name="textColor" value="#000000"><br><br>
+
+            <label for="cardFormat">Choose Card Format:</label><br>
+            <select id="cardFormat" name="cardFormat">
+                <option value="format1">Format 1</option>
+                <option value="format2">Format 2</option>
+                <option value="format3">Format 3</option>
+                <option value="format4">Format 4</option>
+            </select><br><br>
+
+            <button type="submit">Generate Visiting Card</button>
+        </form>
+        <div id="visitingCard" class="grid-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

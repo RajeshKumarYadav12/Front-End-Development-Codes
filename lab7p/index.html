@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <br><br>
+    <fieldset>
+        <!-- <legend>Bitwise operation website</legend> -->
+        <h2>Bitwise Calculator</h2>
+        <br>
+        <label for="No-of-bits">No of Bits:</label>
+        <input type="text" id="No-of-bits">
+        <br><br><br>
+        <label for="str1">String1:</label>
+        <input type="text" id="str1">
+        <label for="str2">String2:</label>
+        <input type="text" id="str2">
+        <br><br><br>
+        <!-- <label for="operation">operation:</label>
+        <input type="text" id="operation"> -->
+        <label for="operation">Bitwise Operation:</label>
+        <select name="BitwiseOperation" id="operation">
+            <option value="or">OR</option>
+            <option value="nor">NOR</option>
+            <option value="and">AND</option>
+            <option value="nand">NAND</option>
+            <option value="xor">XOR</option>
+            <option value="not">NOT</option>
+        </select>
+        <br><br>
+        <button onclick="performBitwiseOperations()">Compute Result</button>
+        <br><br>
+    </fieldset>
+
+    <script src="Script.js"></script>
+</body>
+</html>

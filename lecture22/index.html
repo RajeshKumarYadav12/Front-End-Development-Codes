@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 2px solid blanchedalmond;
+            background-color: aquamarine;
+            height: 600px;
+            padding: 2px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box{
+            --primary-color: brown;
+            --custom-width: 330px;
+            border: 2px solid black;
+            background-color: rgb(227, 140, 10);
+            width: var(--custom-width);
+            height: 400px;
+            padding: 2px;
+            margin: 2px;
+            /* box-shadow: 10px 15px red; */
+            /* box-shadow: 10px 15px 5px brown; */
+            /* box-shadow: 10px 15px 5px 100px rgb(1, 64, 93);
+        } */
+            /* box-shadow: inset 10px 15px red;  */
+            /* box-shadow: 10px 15px rgb(23, 2, 94), 12px 20px rgb(6, 201, 231);  */
+    }
+    #head1{
+        /* text-shadow: 2px 3px 2px white; */
+        text-shadow: 1px 3px blueviolet, 2px 5px red, 4px 7px yellow;
+    }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.jpeg" alt="LogoImage">
+            <h2 id="head1">Wellcome to codeHelp</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum similique velit excepturi cumque a veritatis non unde adipisci tempore? Nihil soluta exercitationem ut dignissimos, fugiat possimus illum laborum. Veritatis!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
